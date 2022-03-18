@@ -1,5 +1,4 @@
-
-const repositoryName = "teste";
+import { RepositoryItem } from "./RepositoryItem";
 
 export function RepositoryList() {
     return (
@@ -7,30 +6,10 @@ export function RepositoryList() {
             <h1>Repositórios</h1>
 
             <ul>
-                <li>
-                    <strong>{repositoryName}</strong>
-                    <p>Forms in React</p>
-
-                    <a href="#">
-                        Acessar Repositório
-                    </a>
-                </li>
-                <li>
-                    <strong>unform</strong>
-                    <p>Forms in React</p>
-
-                    <a href="#">
-                        Acessar Repositório
-                    </a>
-                </li>
-                <li>
-                    <strong>unform</strong>
-                    <p>Forms in React</p>
-
-                    <a href="#">
-                        Acessar Repositório
-                    </a>
-                </li>
+                <RepositoryItem />
+                <RepositoryItem />
+                <RepositoryItem />
+                <RepositoryItem />
             </ul>
         </section>
     )
